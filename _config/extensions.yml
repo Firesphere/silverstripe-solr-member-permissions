@@ -1,6 +1,6 @@
 Firesphere\SolrSearch\Indexes\BaseIndex:
   extensions:
     - Firesphere\SolrPermissions\Extensions\BaseIndexExtension
-#SilverStripe\ORM\DataObject:
-#  extensions:
-#    -
+SilverStripe\ORM\DataObject:
+  extensions:
+    - Firesphere\SolrPermissions\Extensions\DataObjectExtension

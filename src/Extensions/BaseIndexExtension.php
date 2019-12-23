@@ -44,5 +44,8 @@ class BaseIndexExtension extends Extension
 
         $clientQuery->createFilterQuery('MemberView')
             ->setQuery($criteria->getQuery());
+        $filterQueries = $clientQuery->getFilterQueries();
+        unset($filterQueries['ViewStatus']);
+        $clientQuery->setFilterQueries($filterQueries);
     }
 }

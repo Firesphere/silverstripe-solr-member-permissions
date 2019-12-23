@@ -5,13 +5,14 @@ namespace Firesphere\SolrPermissions\Extensions;
 
 
 use SilverStripe\ORM\DataExtension;
+use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Member;
 use SilverStripe\Security\Security;
 
 /**
  * Class \Firesphere\SolrPermissions\Extensions\DataObjectExtension
  *
- * @property DataObjectExtension $owner
+ * @property DataObject|DataObjectExtension $owner
  */
 class DataObjectExtension extends DataExtension
 {
@@ -19,6 +20,7 @@ class DataObjectExtension extends DataExtension
     /**
      * Get the member permissions for each unique user in the system
      * This is additional to the GroupView permissions
+     *
      * @return array
      */
     public function getMemberView()
