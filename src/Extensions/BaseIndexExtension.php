@@ -3,7 +3,6 @@
 
 namespace Firesphere\SolrPermissions\Extensions;
 
-
 use Firesphere\SolrSearch\Indexes\BaseIndex;
 use Firesphere\SolrSearch\Queries\BaseQuery;
 use Minimalcode\Search\Criteria;
@@ -26,7 +25,6 @@ class BaseIndexExtension extends Extension
      */
     public function onAfterInit()
     {
-
         $this->owner->addFilterField('MemberView');
     }
 
@@ -36,7 +34,8 @@ class BaseIndexExtension extends Extension
      * @param BaseQuery $query
      * @param Query $clientQuery
      */
-    public function onBeforeSearch($query, $clientQuery) {
+    public function onBeforeSearch($query, $clientQuery)
+    {
         $member = Security::getCurrentUser();
 
         $filter = ['null'];

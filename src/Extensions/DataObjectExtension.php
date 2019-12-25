@@ -3,7 +3,6 @@
 
 namespace Firesphere\SolrPermissions\Extensions;
 
-
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\DataObject;
