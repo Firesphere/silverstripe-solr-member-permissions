@@ -6,7 +6,7 @@ namespace Firesphere\SolrPermissions\Extensions;
 use Firesphere\SolrSearch\Factories\DocumentFactory;
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DataObject;
-use Solarium\Core\Query\AbstractDocument;
+use Solarium\Core\Query\DocumentInterface;
 
 /**
  * Class \Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension
@@ -21,7 +21,7 @@ class DocumentFactoryExtension extends Extension
     /**
      * Add the MemberView status to the default fields
      *
-     * @param AbstractDocument $doc
+     * @param DocumentInterface $doc
      * @param DataObject|DataObjectExtension $item
      */
     public function updateDefaultFields($doc, $item)
