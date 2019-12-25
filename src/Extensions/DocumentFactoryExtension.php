@@ -6,7 +6,6 @@ namespace Firesphere\SolrPermissions\Extensions;
 
 use Firesphere\SolrSearch\Factories\DocumentFactory;
 use SilverStripe\Core\Extension;
-use SilverStripe\Dev\Debug;
 use SilverStripe\ORM\DataObject;
 use Solarium\Core\Query\AbstractDocument;
 
