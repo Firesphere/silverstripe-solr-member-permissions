@@ -4,3 +4,9 @@ Firesphere\SolrSearch\Indexes\BaseIndex:
 SilverStripe\ORM\DataObject:
   extensions:
     - Firesphere\SolrPermissions\Extensions\DataObjectExtension
+Firesphere\SolrSearch\Factories\DocumentFactory:
+  extensions:
+    - Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension
+Firesphere\SolrSearch\Services\SchemaService:
+  extensions:
+    - Firesphere\SolrPermissions\Extensions\SchemaServiceExtension

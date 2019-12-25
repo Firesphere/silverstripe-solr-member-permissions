@@ -20,15 +20,6 @@ use Solarium\QueryType\Select\Query\Query;
  */
 class BaseIndexExtension extends Extension
 {
-
-    /**
-     * Add the Member based permissions
-     */
-    public function onAfterInit()
-    {
-        $this->owner->addFilterField('MemberView');
-    }
-
     /**
      * Before search, add the member view filtering
      *

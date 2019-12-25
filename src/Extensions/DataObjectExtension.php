@@ -42,6 +42,20 @@ class DataObjectExtension extends DataExtension
             return ['null'];
         }
 
+        $return = $this->getViewList();
+
+        Security::setCurrentUser($currentUser);
+
+        return $return;
+    }
+
+    /**
+     * Get the list of members who can view this owner
+     *
+     * @return array
+     */
+    private function getViewList(): array
+    {
         if (!static::$memberList) {
             static::$memberList = ArrayList::create(Member::get()->toArray());
         }
@@ -52,8 +66,6 @@ class DataObjectExtension extends DataExtension
                 $return[] = sprintf('1-%s', $member->ID);
             }
         }
-
-        Security::setCurrentUser($currentUser);
 
         return $return;
     }
