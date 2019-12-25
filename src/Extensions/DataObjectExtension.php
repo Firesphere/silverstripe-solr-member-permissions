@@ -4,6 +4,7 @@
 namespace Firesphere\SolrPermissions\Extensions;
 
 
+use SilverStripe\ORM\ArrayList;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Member;
@@ -12,10 +13,16 @@ use SilverStripe\Security\Security;
 /**
  * Class \Firesphere\SolrPermissions\Extensions\DataObjectExtension
  *
+ * Add the ability to get the Member View statusses for Solr.
+ *
  * @property DataObject|DataObjectExtension $owner
  */
 class DataObjectExtension extends DataExtension
 {
+    /**
+     * @var ArrayList Cached list of the members to reduce looping impact
+     */
+    protected static $memberList;
 
     /**
      * Get the member permissions for each unique user in the system
@@ -25,6 +32,7 @@ class DataObjectExtension extends DataExtension
      */
     public function getMemberView()
     {
+        /** @var Member|null $currentUser */
         $currentUser = Security::getCurrentUser();
         Security::setCurrentUser(null);
 
@@ -34,10 +42,12 @@ class DataObjectExtension extends DataExtension
             return ['null'];
         }
 
-        $members = Member::get();
+        if (!static::$memberList) {
+            static::$memberList = ArrayList::create(Member::get()->toArray());
+        }
 
         $return = ['false'];
-        foreach ($members as $member) {
+        foreach (static::$memberList as $member) {
             if ($this->owner->canView($member)) {
                 $return[] = sprintf('1-%s', $member->ID);
             }

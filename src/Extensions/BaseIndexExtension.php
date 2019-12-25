@@ -14,11 +14,16 @@ use Solarium\QueryType\Select\Query\Query;
 /**
  * Class \Firesphere\SolrPermissions\Extensions\BaseIndexExtension
  *
+ * Add Member specific view capabilities to the Index
+ *
  * @property BaseIndex|BaseIndexExtension $owner
  */
 class BaseIndexExtension extends Extension
 {
 
+    /**
+     * Add the Member based permissions
+     */
     public function onAfterInit()
     {
 
@@ -26,6 +31,8 @@ class BaseIndexExtension extends Extension
     }
 
     /**
+     * Before search, add the member view filtering
+     *
      * @param BaseQuery $query
      * @param Query $clientQuery
      */
