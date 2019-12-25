@@ -3,7 +3,6 @@
 
 namespace Firesphere\SolrPermissions\Extensions;
 
-
 use Firesphere\SolrSearch\Factories\DocumentFactory;
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DataObject;

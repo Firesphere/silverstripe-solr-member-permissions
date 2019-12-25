@@ -3,7 +3,6 @@
 
 namespace Firesphere\SolrPermissions\Extensions;
 
-
 use Firesphere\SolrSearch\Services\SchemaService;
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\ArrayList;
