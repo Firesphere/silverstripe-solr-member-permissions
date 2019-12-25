@@ -14,6 +14,7 @@ use SilverStripe\Security\Security;
  *
  * Add the ability to get the Member View statusses for Solr.
  *
+ * @package Firesphere\SolrPermissions\Extensions
  * @property DataObject|DataObjectExtension $owner
  */
 class DataObjectExtension extends DataExtension

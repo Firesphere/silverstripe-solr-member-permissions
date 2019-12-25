@@ -15,6 +15,7 @@ use Solarium\QueryType\Select\Query\Query;
  *
  * Add Member specific view capabilities to the Index
  *
+ * @package Firesphere\SolrPermissions\Extensions
  * @property BaseIndex|BaseIndexExtension $owner
  */
 class BaseIndexExtension extends Extension
