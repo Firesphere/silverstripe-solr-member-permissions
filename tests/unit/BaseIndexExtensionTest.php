@@ -29,6 +29,9 @@ class BaseIndexExtensionTest extends SapphireTest
         $member = (new DefaultAdminService())->findOrCreateDefaultAdmin();
         $this->logInAs($member);
 
+        $query = new BaseQuery();
+        $clientQuery = new Query();
+
         $extension->onBeforeSearch($query, $clientQuery);
 
         $this->assertContains(['1-' . $member->ID], $query->getFilter()['MemberView']);
