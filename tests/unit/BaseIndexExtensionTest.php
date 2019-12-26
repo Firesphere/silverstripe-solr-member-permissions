@@ -7,7 +7,6 @@ namespace Firesphere\SolrPermissions\Tests;
 use Firesphere\SolrPermissions\Extensions\BaseIndexExtension;
 use Firesphere\SolrSearch\Queries\BaseQuery;
 use SilverStripe\Dev\SapphireTest;
-use SilverStripe\ORM\DataObject;
 use Solarium\QueryType\Select\Query\Query;
 
 class BaseIndexExtensionTest extends SapphireTest
@@ -15,7 +14,7 @@ class BaseIndexExtensionTest extends SapphireTest
 
     public function testOnBeforeSearch()
     {
-        $object = new CircleCITestIndex();
+        $object = new \CircleCITestIndex();
         $extension = new BaseIndexExtension();
         $extension->setOwner($object);
 
