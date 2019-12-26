@@ -7,6 +7,7 @@ namespace Firesphere\SolrPermissions\Tests;
 use Firesphere\SolrPermissions\Extensions\BaseIndexExtension;
 use Firesphere\SolrSearch\Queries\BaseQuery;
 use SilverStripe\Dev\SapphireTest;
+use SilverStripe\Security\DefaultAdminService;
 use Solarium\QueryType\Select\Query\Query;
 
 class BaseIndexExtensionTest extends SapphireTest
@@ -24,5 +25,12 @@ class BaseIndexExtensionTest extends SapphireTest
         $result = $extension->onBeforeSearch($query, $clientQuery);
 
         $this->assertEquals(['MemberView' => ['null']], $query->getFilter());
+
+        $member = (new DefaultAdminService())->findOrCreateDefaultAdmin();
+        $this->logInAs($member);
+
+        $extension->onBeforeSearch($query, $clientQuery);
+
+        $this->assertContains(['1-' . $member->ID], $query->getFilter()['MemberView']);
     }
 }
