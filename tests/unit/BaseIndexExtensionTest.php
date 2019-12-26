@@ -34,7 +34,7 @@ class BaseIndexExtensionTest extends SapphireTest
 
         $extension->onBeforeSearch($query, $clientQuery);
 
-        $this->assertContains(['1-' . $member->ID], $query->getFilter()['MemberView']);
+        $this->assertContains('1-' . $member->ID, $query->getFilter()['MemberView']);
 
         $filterQueries = $clientQuery->getFilterQueries();
 
