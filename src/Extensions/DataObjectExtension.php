@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Class DataObjectExtension|Firesphere\SolrPermissions\Extensions\DataObjectExtension Generate the View permissions of
+ * each member for indexing
+ *
+ * @package Firesphere\SolrPermissions\Extensions
+ * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
+ * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
+ */
 
 namespace Firesphere\SolrPermissions\Extensions;
 

@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Class DocumentFactoryExtension|Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension Update the documents
+ * fields with the MemberView settings
+ *
+ * @package Firesphere\SolrPermissions\Extensions
+ * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
+ * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
+ */
 
 namespace Firesphere\SolrPermissions\Extensions;
 

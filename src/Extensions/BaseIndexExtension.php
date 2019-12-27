@@ -1,4 +1,12 @@
 <?php
+/**
+ * Class BaseIndexExtension|Firesphere\SolrPermissions\Extensions\BaseIndexExtension Add Member specific filtering to a
+ * query
+ *
+ * @package Firesphere\SolrPermissions\Extensions
+ * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
+ * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
+ */
 
 
 namespace Firesphere\SolrPermissions\Extensions;
