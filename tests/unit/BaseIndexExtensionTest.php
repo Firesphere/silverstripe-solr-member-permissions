@@ -22,7 +22,7 @@ class BaseIndexExtensionTest extends SapphireTest
         $query = new BaseQuery();
         $clientQuery = new Query();
 
-        $result = $extension->onBeforeSearch($query, $clientQuery);
+        $extension->onBeforeSearch($query, $clientQuery);
 
         $this->assertEquals(['MemberView' => ['null']], $query->getFilter());
 
