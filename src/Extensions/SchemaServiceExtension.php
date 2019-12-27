@@ -12,6 +12,7 @@ use SilverStripe\ORM\ArrayList;
  *
  * Extension class to add the default filters for the MemberView
  *
+ * @package Firesphere\SolrPermissions\Extensions
  * @property SchemaService|SchemaServiceExtension $owner
  */
 class SchemaServiceExtension extends Extension

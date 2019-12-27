@@ -13,6 +13,7 @@ use Solarium\Core\Query\DocumentInterface;
  *
  * Extension class to add the default MemberView field to the Solr document
  *
+ * @package Firesphere\SolrPermissions\Extensions
  * @property DocumentFactory|DocumentFactoryExtension $owner
  */
 class DocumentFactoryExtension extends Extension
