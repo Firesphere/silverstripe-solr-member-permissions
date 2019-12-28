@@ -3,13 +3,11 @@
 
 namespace Firesphere\SolrPermissions\Tests;
 
-
 use Firesphere\SolrPermissions\Extensions\DataObjectExtension;
 use SilverStripe\Dev\SapphireTest;
 
 class DataObjectExtensionTest extends SapphireTest
 {
-
     public function testGetMemberView()
     {
         $page = \Page::get()->first();

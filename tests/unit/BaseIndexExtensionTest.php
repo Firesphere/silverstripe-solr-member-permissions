@@ -3,7 +3,6 @@
 
 namespace Firesphere\SolrPermissions\Tests;
 
-
 use Firesphere\SolrPermissions\Extensions\BaseIndexExtension;
 use Firesphere\SolrSearch\Queries\BaseQuery;
 use SilverStripe\Dev\SapphireTest;
@@ -12,7 +11,6 @@ use Solarium\QueryType\Select\Query\Query;
 
 class BaseIndexExtensionTest extends SapphireTest
 {
-
     public function testOnBeforeSearch()
     {
         $object = new \CircleCITestIndex();
@@ -39,6 +37,5 @@ class BaseIndexExtensionTest extends SapphireTest
         $filterQueries = $clientQuery->getFilterQueries();
 
         $this->assertFalse(array_key_exists('ViewStatus', $filterQueries));
-
     }
 }
