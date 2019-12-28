@@ -4,6 +4,7 @@
 namespace Firesphere\SolrPermissions\Tests;
 
 use Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension;
+use SilverStripe\Dev\Debug;
 use SilverStripe\Dev\SapphireTest;
 use Solarium\QueryType\Update\Query\Query;
 
@@ -21,6 +22,8 @@ class DocumentFactoryExtensionTest extends SapphireTest
         $extension->updateDefaultFields($document, $page);
 
         $fields = $document->getFields();
+
+        Debug::dump($fields);
 
         $this->assertContains('MemberView', $fields);
     }
