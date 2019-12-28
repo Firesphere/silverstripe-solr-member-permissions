@@ -20,7 +20,7 @@ class DataObjectExtensionTest extends SapphireTest
 
         $this->assertEquals(['null'], $viewStatus);
 
-        $page->CanViewType('LoggedInUsers');
+        $page->CanViewType = 'LoggedInUsers';
         $page->write();
 
         $extension->setOwner($page);
