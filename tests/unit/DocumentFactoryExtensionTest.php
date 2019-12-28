@@ -23,8 +23,6 @@ class DocumentFactoryExtensionTest extends SapphireTest
 
         $fields = $document->getFields();
 
-        Debug::dump($fields);
-
-        $this->assertContains('MemberView', $fields);
+        $this->assertArrayHasKey('MemberView', $fields);
     }
 }
