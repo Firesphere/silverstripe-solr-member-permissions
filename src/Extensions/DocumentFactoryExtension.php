@@ -32,7 +32,7 @@ class DocumentFactoryExtension extends Extension
      * @param DocumentInterface $doc
      * @param DataObject|DataObjectExtension $item
      */
-    public function updateDefaultFields($doc, $item)
+    public function updateDefaultFields(&$doc, $item)
     {
         $doc->addField('MemberView', $item->getMemberView());
     }
