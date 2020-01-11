@@ -9,4 +9,4 @@ Firesphere\SolrSearch\Factories\DocumentFactory:
     - Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension
 Firesphere\SolrSearch\Factories\SchemaFactory:
   extensions:
-    - Firesphere\SolrPermissions\Extensions\SchemaServiceExtension
+    - Firesphere\SolrPermissions\Extensions\SchemaFactoryExtension
