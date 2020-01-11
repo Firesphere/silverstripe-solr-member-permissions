@@ -1,6 +1,6 @@
 <?php
 /**
- * Class SchemaServiceExtension|Firesphere\SolrPermissions\Extensions\SchemaServiceExtension Add the member view
+ * Class SchemaFactoryExtension|Firesphere\SolrPermissions\Extensions\SchemaFactoryExtension Add the member view
  * permission field to the schema
  *
  * @package Firesphere\SolrPermissions\Extensions
@@ -10,19 +10,19 @@
 
 namespace Firesphere\SolrPermissions\Extensions;
 
-use Firesphere\SolrSearch\Services\SchemaService;
+use Firesphere\SolrSearch\Factories\SchemaFactory;
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\ArrayList;
 
 /**
- * Class \Firesphere\SolrPermissions\Extensions\SchemaServiceExtension
+ * Class \Firesphere\SolrPermissions\Extensions\SchemaFactoryExtension
  *
  * Extension class to add the default filters for the MemberView
  *
  * @package Firesphere\SolrPermissions\Extensions
- * @property SchemaService|SchemaServiceExtension $owner
+ * @property SchemaFactory|SchemaFactoryExtension $owner
  */
-class SchemaServiceExtension extends Extension
+class SchemaFactoryExtension extends Extension
 {
 
     /**

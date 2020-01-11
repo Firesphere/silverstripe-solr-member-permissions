@@ -7,6 +7,6 @@ SilverStripe\ORM\DataObject:
 Firesphere\SolrSearch\Factories\DocumentFactory:
   extensions:
     - Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension
-Firesphere\SolrSearch\Services\SchemaService:
+Firesphere\SolrSearch\Factories\SchemaFactory:
   extensions:
     - Firesphere\SolrPermissions\Extensions\SchemaServiceExtension
