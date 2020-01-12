@@ -3,14 +3,12 @@
 
 namespace Firesphere\SolrPermissions\Tests;
 
-
 use Firesphere\SolrPermissions\Extensions\SchemaFactoryExtension;
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\ORM\ArrayList;
 
 class SchemaFactoryExtensionTest extends SapphireTest
 {
-
     public function testOnBeforeFilterFields()
     {
         $list = ArrayList::create();
