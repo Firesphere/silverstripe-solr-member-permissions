@@ -3,7 +3,7 @@
  * Class DocumentFactoryExtension|Firesphere\SolrPermissions\Extensions\DocumentFactoryExtension Update the documents
  * fields with the MemberView settings
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
  * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
  */
@@ -20,7 +20,7 @@ use Solarium\Core\Query\DocumentInterface;
  *
  * Extension class to add the default MemberView field to the Solr document
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @property DocumentFactory|DocumentFactoryExtension $owner
  */
 class DocumentFactoryExtension extends Extension

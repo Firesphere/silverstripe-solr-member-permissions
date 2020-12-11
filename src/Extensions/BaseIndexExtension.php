@@ -3,7 +3,7 @@
  * Class BaseIndexExtension|Firesphere\SolrPermissions\Extensions\BaseIndexExtension Add Member specific filtering to a
  * query
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
  * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
  */
@@ -23,7 +23,7 @@ use Solarium\QueryType\Select\Query\Query;
  *
  * Add Member specific view capabilities to the Index
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @property BaseIndex|BaseIndexExtension $owner
  */
 class BaseIndexExtension extends Extension

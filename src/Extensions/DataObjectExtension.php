@@ -3,7 +3,7 @@
  * Class DataObjectExtension|Firesphere\SolrPermissions\Extensions\DataObjectExtension Generate the View permissions of
  * each member for indexing
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @author Simon `Firesphere` Erkelens; Marco `Sheepy` Hermo
  * @copyright Copyright (c) 2018 - now() Firesphere & Sheepy
  */
@@ -21,7 +21,7 @@ use SilverStripe\Security\Security;
  *
  * Add the ability to get the Member View statusses for Solr.
  *
- * @package Firesphere\SolrPermissions\Extensions
+ * @package Firesphere\Solr\Permissions
  * @property DataObject|DataObjectExtension $owner
  */
 class DataObjectExtension extends DataExtension
