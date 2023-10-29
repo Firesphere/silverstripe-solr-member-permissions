@@ -9,6 +9,8 @@
 
 # Solr Search member permissions
 
+[GPL v3 or later](LICENSE.md)
+
 This module aims to add per-member-permissions to the Solr Search module, as addition to the default group-based search
 
 [See the documentation](https://firesphere.github.io/solr-docs/11-Submodules/04-Member-based-permissions.html)

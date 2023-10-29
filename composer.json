@@ -2,7 +2,7 @@
   "name": "firesphere/solr-member-permissions",
   "description": "Fine grained per-member-permission control for Solr Search",
   "type": "silverstripe-vendormodule",
-  "license": "BSD-3-Clause",
+  "license": "GPL-3.0-or-later",
   "keywords": [
     "silverstripe",
     "search",
